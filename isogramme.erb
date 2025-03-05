@@ -1,0 +1,9 @@
+<h1>Vérificateur d'isogramme</h1>
+<form action="/verifier_isogramme" method="post">
+  <label for="mot">Mot :</label>
+  <input type="text" id="mot" name="mot">
+  <button type="submit">Vérifier</button>
+</form>
+<% if @resultat %>
+  <p><%= @resultat %></p>
+<% end %>
