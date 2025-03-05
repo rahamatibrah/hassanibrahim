@@ -1,0 +1,10 @@
+<h1>Calcule de la transposée</h1>
+<form action="/calcule_transpose" method="post">
+  <label for="matrice">matrice (ligne separese paramsr saut de ligne, element par des virgules) :</label><br>
+  <textarea id="matrice" name="matrice" rows="5" cols="30" ></textarea><br>
+  <button type="submit">Calcule</button>
+</form>
+<% if @transposee %>
+  <h2><%= @Transposée %></h2>
+  <pre><%= transposee.map { |ligne| ligne.join(',')}.join("\n") %></pre>
+<% end %>
